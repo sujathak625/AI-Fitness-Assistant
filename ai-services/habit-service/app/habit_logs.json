@@ -1,0 +1,24 @@
+{
+    "logs": [
+        {
+            "habit": "Running",
+            "status": "Partial",
+            "date": "2025-11-21T11:34:14"
+        },
+        {
+            "habit": "Yoga",
+            "status": "Completed",
+            "date": "2025-11-21T11:34:26"
+        },
+        {
+            "habit": "Yoga",
+            "status": "Completed",
+            "date": "2025-11-21T13:18:59"
+        },
+        {
+            "habit": "Running",
+            "status": "Partial",
+            "date": "2025-11-21T13:19:14"
+        }
+    ]
+}

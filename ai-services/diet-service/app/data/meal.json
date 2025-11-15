@@ -1,0 +1,70 @@
+{
+  "vegan": {
+    "breakfast": [
+      "Oats with almond milk, banana, chia seeds",
+      "Smoothie bowl with berries + flax seeds",
+      "Tofu scramble + whole-grain toast"
+    ],
+    "lunch": [
+      "Quinoa salad with tofu + veggies",
+      "Veg burrito bowl with beans + avocado",
+      "Chickpea curry + brown rice"
+    ],
+    "dinner": [
+      "Lentil soup + steamed vegetables",
+      "Tofu stir-fry with broccoli",
+      "Vegan vegetable khichdi"
+    ],
+    "snacks": [
+      "Mixed nuts",
+      "Hummus with carrots",
+      "Fruit bowl"
+    ]
+  },
+
+  "veg": {
+    "breakfast": [
+      "Oats + milk + fruits",
+      "Vegetable upma",
+      "Poha with peanuts"
+    ],
+    "lunch": [
+      "Paneer salad + dal + chapati",
+      "Veg biryani + curd",
+      "Paneer wrap with veggies"
+    ],
+    "dinner": [
+      "Veg khichdi",
+      "Paneer stir-fry",
+      "Vegetable soup + toast"
+    ],
+    "snacks": [
+      "Fruit bowl",
+      "Yogurt + seeds",
+      "Nuts"
+    ]
+  },
+
+  "non_veg": {
+    "breakfast": [
+      "Egg whites + fruits",
+      "Boiled eggs + toast",
+      "Chicken sausage + oats"
+    ],
+    "lunch": [
+      "Chicken salad",
+      "Grilled chicken + rice",
+      "Egg curry + roti"
+    ],
+    "dinner": [
+      "Grilled fish + vegetables",
+      "Chicken soup",
+      "Chicken stir-fry"
+    ],
+    "snacks": [
+      "Greek yogurt",
+      "Boiled egg",
+      "Protein bar"
+    ]
+  }
+}

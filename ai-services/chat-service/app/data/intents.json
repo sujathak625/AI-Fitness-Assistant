@@ -1,0 +1,51 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening"],
+      "responses": [
+        "Hello! I'm your AI Gym Buddy. How can I support your fitness goals today? 💪"
+      ]
+    },
+
+    {
+      "tag": "feeling_low",
+      "patterns": ["I feel sad", "I'm tired", "I feel low", "I have no energy", "I'm exhausted"],
+      "responses": [
+        "It's okay to have low-energy days. Want a light stretching routine?"
+      ]
+    },
+
+    {
+      "tag": "motivation",
+      "patterns": ["motivate me", "give me motivation", "i need inspiration"],
+      "responses": [
+        "You've come far already — let's push a little today! 🔥"
+      ]
+    },
+
+    {
+      "tag": "ask_workout",
+      "patterns": ["give me a workout", "suggest a workout", "workout plan", "exercise routine"],
+      "responses": [
+        "Sure! What kind of workout do you prefer — fat loss, muscle gain, or a quick warm-up?"
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you"],
+      "responses": [
+        "Anytime! I'm always here to help 😊"
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "talk to you later"],
+      "responses": [
+        "Goodbye! Stay strong and keep moving 💪😊"
+      ]
+    }
+  ]
+}

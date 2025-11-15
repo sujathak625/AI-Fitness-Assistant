@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "model_type": "rule_based_workout_model",
+    "version": "1.0",
+    "description": "Workout recommendation rules for AI Gym Assistant"
+  },
+
+  "goals": {
+    "fat_loss": {
+      "beginner": [
+        "10 min warm-up",
+        "15 min walking or light HIIT",
+        "10 min core exercises",
+        "5 min stretching"
+      ],
+      "intermediate": [
+        "10 min warm-up",
+        "25 min HIIT circuits",
+        "15 min strength training",
+        "5 min stretching"
+      ],
+      "advanced": [
+        "10 min warm-up",
+        "40 min HIIT + weights",
+        "15 min core power session",
+        "10 min deep stretching"
+      ]
+    },
+
+    "muscle_gain": {
+      "beginner": [
+        "10 min warm-up",
+        "Full-body strength training (3 sets per exercise)",
+        "Cool-down 5 min"
+      ],
+      "intermediate": [
+        "Upper/Lower split workout",
+        "Heavy compound lifts (4 sets each)",
+        "Accessory strength work"
+      ],
+      "advanced": [
+        "Push/Pull/Legs split",
+        "Progressive overload session",
+        "Isolation hypertrophy training"
+      ]
+    },
+
+    "endurance": {
+      "beginner": [
+        "15 min jogging",
+        "10 min core stability",
+        "Stretching 5 min"
+      ],
+      "intermediate": [
+        "25 min running or cycling",
+        "10 min endurance circuits",
+        "5 min stretching"
+      ],
+      "advanced": [
+        "45 min running/cycling",
+        "10 min e

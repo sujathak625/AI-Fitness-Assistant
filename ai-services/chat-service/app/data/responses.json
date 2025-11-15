@@ -1,0 +1,14 @@
+{
+  "default": [
+    "I'm here to help — tell me more! 😊"
+  ],
+  "positive": [
+    "Love the energy! Keep it up! 🔥"
+  ],
+  "negative": [
+    "It's okay — take it one step at a time. You're doing great ❤️"
+  ],
+  "neutral": [
+    "Got it — tell me what you'd like help with next!"
+  ]
+}

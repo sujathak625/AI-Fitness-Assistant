@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "model_type": "rule_based_diet_planner",
+    "version": "1.0",
+    "description": "Lightweight diet recommendation model for AI Gym Assistant"
+  },
+
+  "calorie_targets": {
+    "lose": -400,
+    "gain": 400,
+    "maintain": 0
+  },
+
+  "meal_templates": {
+    "veg": {
+      "lose": {
+        "breakfast": "Oats with chia seeds and fruits",
+        "lunch": "Vegetable salad with sprouts",
+        "dinner": "Grilled paneer with steamed veggies",
+        "snacks": "Green tea and almonds"
+      },
+      "gain": {
+        "breakfast": "Peanut butter toast with banana",
+        "lunch": "Rice, dal and paneer curry",
+        "dinner": "Veg pulao with curd",
+        "snacks": "Protein shake"
+      },
+      "maintain": {
+        "breakfast": "Idli / poha with peanuts",
+        "lunch": "Balanced thali with dal, roti, sabji",
+        "dinner": "Paneer bhurji with chapati",
+        "snacks": "Fruits"
+      }
+    },
+
+    "non_veg": {
+      "lose": {
+        "breakfast": "Egg whites with fruit",
+        "lunch": "Chicken salad",
+        "dinner": "Grilled fish with vegetables",
+        "snacks": "Greek yogurt"
+      },
+      "gain": {
+        "breakfast": "Eggs with peanut butter toast",
+        "lunch": "Chicken curry with rice",
+        "dinner": "Chicken pasta",
+        "snacks": "Protein shake"
+      },
+      "maintain": {
+        "breakfast": "Omelette or oats",
+        "lunch": "Balanced chicken meal with carbs",
+        "dinner": "Light chicken or fish",
+        "snacks": "Eggs or yogurt"
+      }
+    },
+
+    "vegan": {
+      "lose": {
+        "breakfast": "Smoothie bowl with oats and berries",
+        "lunch": "Vegan salad with beans",
+        "dinner": "Tofu stir fry with vegetables",
+        "snacks": "Fruit + nuts"
+      },
+      "gain": {
+        "breakfast": "Oat smoothie with peanut butter",
+        "lunch": "Rice with tofu curry",
+        "dinner": "Vegan pasta",
+        "snacks": "Plant protein shake"
+      },
+      "maintain": {
+        "breakfast": "Vegan oats",
+        "lunch": "Rice + veggies + tofu",
+        "dinner": "Lentil soup with salad",
+        "snacks": "Vegan yogurt"
+      }
+    }
+  }
+}

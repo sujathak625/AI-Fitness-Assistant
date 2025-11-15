@@ -1,0 +1,24 @@
+{
+  "users": {
+    "7780d094-9f74-4fca-a07e-ad9253280fa1": {
+      "history": [
+        {
+          "role": "user",
+          "text": "hi",
+          "ts": 1763728805
+        }
+      ],
+      "profile": {}
+    },
+    "123": {
+      "history": [
+        {
+          "role": "user",
+          "text": "hi",
+          "ts": 1763728931
+        }
+      ],
+      "profile": {}
+    }
+  }
+}

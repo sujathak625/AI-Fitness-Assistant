@@ -1,0 +1,6 @@
+excitement: happy, great, awesome, excited, motivated
+sadness: sad, upset, unhappy, depressed
+anxiety: nervous, worried, anxious, stress
+anger: angry, mad, frustrated
+tired: tired, exhausted, sleepy
+neutral: ok, fine, normal, alright
