@@ -1,0 +1,130 @@
+############################################################
+# 🧪 PYTHON GENERAL
+############################################################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.pickle
+*.log
+*.tmp
+*~
+
+# Unit test / coverage
+.coverage
+.pytest_cache/
+htmlcov/
+tests/.pytest_cache/
+
+############################################################
+# 🐍 VIRTUAL ENVIRONMENTS
+############################################################
+.venv/
+venv/
+env/
+ENV/
+*.env
+*.env.*
+
+############################################################
+# 🗃️ BYTECODE / BUILD / DIST
+############################################################
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+python_pkg.egg-info/
+
+############################################################
+# 📦 PACKAGES / MODELS / DATA (OPTIONAL)
+############################################################
+# Huggingface models
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Model caches
+/models/
+model-cache/
+transformers_cache/
+hf_cache/
+
+# numpy / torch / CV temp files
+*.npy
+*.npz
+*.onnx
+
+############################################################
+# ⚙️ FASTAPI / STREAMLIT / IOT PROJECT SPECIFIC
+############################################################
+*.db
+*.sqlite
+*.sqlite3
+mqtt-logs/
+iot-data/
+uploaded_files/
+checkpoint/
+media/
+temp/
+sessions/
+
+############################################################
+# 📁 EDITORS / IDE FILES
+############################################################
+# VSCode
+.vscode/
+
+# JetBrains
+.idea/
+*.iml
+
+############################################################
+# 🖥️ MACOS SYSTEM FILES
+############################################################
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+############################################################
+# 📸 OPENCV / MEDIA FILES (Optional)
+############################################################
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.svg
+*.mp4
+*.mov
+*.avi
+
+############################################################
+# 📘 STREAMLIT GENERATED FILES
+############################################################
+.streamlit/secrets.toml
+.streamlit/*.json
+.streamlit/*.log
+
+############################################################
+# 🚀 DOCKER (if using)
+############################################################
+docker-data/
+*.dockerfile.old
+
+############################################################
+# 🔐 SECURITY / SECRETS
+############################################################
+*.pem
+*.key
+*.crt
+*.csr
+secrets/
+config.local.json
+.env.production
+.env.local
