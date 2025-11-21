@@ -37,7 +37,7 @@ The platform includes the following components:
 
 ## ⚙️ Prerequisites
 
-- Python **3.10+**  
+- Python **3.10+**  (Do not run in latest python. Only Version 3.10 will be required as some of the libraries used will not work with latest version)
 - macOS / Linux / Windows  
 - Mosquitto MQTT Broker  
 
@@ -47,7 +47,7 @@ The platform includes the following components:
 
 ### 1. Clone the Repo
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/sujathak625/AI-Fitness-Assistant.git
 cd ai-gym-and-fitness-assistant
 ```
 
@@ -58,9 +58,7 @@ source .venv/bin/activate
 ```
 
 ### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
+
 
 # 📦 Mandatory Dependencies (Grouped)
 
