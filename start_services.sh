@@ -10,6 +10,12 @@ VENV_PATH="/Users/ksujatha/Projects/ai-gym-and-fitness-asistant/.venv/bin/uvicor
 # Base project path
 BASE_DIR="/Users/ksujatha/Projects/ai-gym-and-fitness-asistant"
 
+# Path to Streamlit inside venv
+STREAMLIT_PATH="/Users/ksujatha/Projects/ai-gym-and-fitness-asistant/.venv/bin/streamlit"
+
+# Mosquitto config
+MOSQUITTO_CONF="/usr/local/etc/mosquitto/mosquitto.conf"
+
 # =============================================
 #  UTILITY: KILL PORT IF OCCUPIED
 # =============================================
@@ -54,6 +60,8 @@ start_service() {
 
     sleep 1
     echo "✅ $name started on port $port"
+
+    cd "$BASE_DIR"
 }
 
 # =============================================
@@ -61,35 +69,50 @@ start_service() {
 # =============================================
 echo ""
 echo "==============================================="
-echo "🚀 Starting All AI Fitness Microservices..."
+echo "🚀 Starting Mosquitto, Microservices & Streamlit"
 echo "==============================================="
 
 # =============================================
-#  START ALL SERVICES
+#  MOSQUITTO
+# =============================================
+echo ""
+echo "--------------------------------------------------"
+echo "🔌 Stopping Mosquitto if running..."
+echo "--------------------------------------------------"
+pkill -f mosquitto 2>/dev/null || true
+sleep 1
+
+echo "--------------------------------------------------"
+echo "🚀 Starting Mosquitto MQTT Broker"
+echo "--------------------------------------------------"
+mosquitto -c "$MOSQUITTO_CONF" &
+sleep 1
+echo "🟢 Mosquitto Started"
+
+# =============================================
+#  START ALL MICROSERVICES
 # =============================================
 
-#  folder          port   name                         reload?
 start_service "pose-service"   8000 "Pose Detection Service"       YES
 start_service "diet-service"   8100 "Diet Planner Service"         YES
 start_service "habit-service"  8200 "Habit Tracker Service"        YES
-
-# CHAT SERVICE MUST NOT USE --reload
 start_service "chat-service"   8300 "Chat Assistant Service"       NO
-
 start_service "iot-service"    8500 "IoT Smart Gym Service"        YES
 start_service "gym-service"    8600 "Gym Recommender Service"      YES
 
+# =============================================
+#  START STREAMSIT IN FOREGROUND (OPTION A)
+# =============================================
+
 echo ""
-echo "==============================================="
-echo "🔥 All microservices started successfully!"
-echo "==============================================="
-echo "🟢 Pose Service:        http://127.0.0.1:8000/health"
-echo "🟢 Diet Service:        http://127.0.0.1:8100/health"
-echo "🟢 Habit Service:       http://127.0.0.1:8200/health"
-echo "🟢 Chat Service:        http://127.0.0.1:8300/health"
-echo "🟢 IoT Service:         http://127.0.0.1:8500/health"
-echo "🟢 Gym Recommender:     http://127.0.0.1:8600/health"
-echo "==============================================="
-echo "📌 Run Streamlit UI:"
-echo "    streamlit run ai_dashboard/app.py"
-echo "==============================================="
+echo "--------------------------------------------------"
+echo "📺 Starting Streamlit UI (foreground mode)"
+echo "--------------------------------------------------"
+
+cd "$BASE_DIR"
+
+# Running in FOREGROUND so browser opens
+PYTHONPATH=$(pwd) $STREAMLIT_PATH run ai_dashboard/Home.py
+
+# Script will block here — other services continue running in background
+
