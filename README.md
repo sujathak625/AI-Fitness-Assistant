@@ -302,6 +302,8 @@ mosquitto
 
 ### Terminal 2 — Backend Services
 ```bash
+chmod +x install.sh   # this is run only one time after the clone of the project.
+
 chmod +x start-services.sh
 ./start-services.sh
 ```
