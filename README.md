@@ -48,13 +48,17 @@ The platform includes the following components:
 ### 1. Clone the Repo
 ```bash
 git clone https://github.com/sujathak625/AI-Fitness-Assistant.git
-cd ai-gym-and-fitness-assistant
+cd AI-Fitness-Assistant
 ```
 
 ### 2. Create Virtual Environment
+
+Due to librariy compatiblity, this project works with Python 3.10 only.
+
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
+python3.10 -m venv .venv      
+
+source .venv/bin/activate    # For Mac
 ```
 
 ### 3. Install Dependencies
